@@ -11,7 +11,8 @@ export class ViewComponent implements OnInit {
   age: Number;
   email: String;
   address;
-  hobbies : String[]
+  hobbies : String[];
+  projects : any[]=[];  //initialize with null array always for database
   constructor() { 
     this.name ="Cristina";
     this.age = 22;
@@ -22,6 +23,17 @@ export class ViewComponent implements OnInit {
       dist : "ekm"
     };
     this.hobbies = ["reading", "listening to music"];
+    this.projects = [
+    {
+      name : "Project1",
+      duration : "5 weeks",
+      endDate : "30/10/19"
+    },
+    {
+      name : "Project2",
+      duration : "10 weeks",
+      endDate : "25/12/19"
+    }];
   }
 
   ngOnInit() {
