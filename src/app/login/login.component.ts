@@ -8,11 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class LoginComponent implements OnInit {
 
   view:Boolean=false;
+  name:String;
   constructor() { }
 
   ngOnInit() {
   }
 
+  showMessage(n){
+    this.view = !this.view; 
+  }
   signUp(){
     this.view = !this.view; 
   }
