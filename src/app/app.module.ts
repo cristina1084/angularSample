@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { DataComponent } from './data/data.component';
 import { ViewComponent } from './view/view.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DataComponent,
-    ViewComponent
+    ViewComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule

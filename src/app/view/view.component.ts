@@ -39,4 +39,13 @@ export class ViewComponent implements OnInit {
   ngOnInit() {
   }
 
+  addProject(){
+    let data = 
+      {
+        name : "Project1",
+        duration : "5 weeks",
+        endDate : "30/10/19"
+      };
+    this.projects.push(data);
+  }
 }

@@ -7,7 +7,11 @@ Hobbies
 <ul>
     <li *ngFor="let hb of hobbies; let i = index">{{ i+1 }} {{ hb }}  </li>
 </ul>
+<hr>
 
+<input type="button" name="btn1" value="Add Project" (click)="addProject()">
+
+<hr>
 <table border="2">
     <thead>
         <th>Sl. No.</th>
