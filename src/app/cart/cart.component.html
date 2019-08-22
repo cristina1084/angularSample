@@ -15,25 +15,30 @@
             <td> {{ p.company }} </td>
             <td> <input type="button" class="btn waves-effect waves-light" value="Add to Cart" (click)="addToCart(i)"> </td>
         </tr>
+        <tr>
+            <td></td><td></td><td></td>
+            <td> <input type="button" class="btn waves-effect waves-light" value="Hide Cart" (click)="hideCart()"> </td>
+            <td> <input type="button" class="btn waves-effect waves-light" value="View Cart" (click)="viewCart()"> </td>
+        </tr>
     </tbody>
 </table>
 
 <hr>
 
-<table class="striped">
-        <thead>
-            <th>Sl. No.</th>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Company</th>
-        </thead>
-        <tbody>
-            <tr *ngFor="let c of cart; let i = index" >
-                <td> {{ i+1 }} </td>
-                <td> {{ c.name }} </td>
-                <td> {{ c.price }} </td>
-                <td> {{ c.company }} </td>
-                <td> <input type="button" class="btn waves-effect waves-light" value="Remove" (click)="removeFromCart(i)"> </td>
-            </tr>
-        </tbody>
-    </table>
+<table class="striped" *ngIf="visible">
+    <thead>
+        <th>Sl. No.</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Company</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let c of cart; let i = index" >
+            <td> {{ i+1 }} </td>
+            <td> {{ c.name }} </td>
+            <td> {{ c.price }} </td>
+            <td> {{ c.company }} </td>
+            <td> <input type="button" class="btn waves-effect waves-light" value="Remove" (click)="removeFromCart(i)"> </td>
+        </tr>
+    </tbody>
+</table>

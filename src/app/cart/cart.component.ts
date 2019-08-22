@@ -9,7 +9,7 @@ export class CartComponent implements OnInit {
 
   products = [];
   cart = [];
-
+  visible:Boolean;
   constructor() { 
     this.products =[
       {
@@ -39,5 +39,13 @@ export class CartComponent implements OnInit {
 
   removeFromCart(i){
     this.cart.splice(i,1);
+  }
+
+  viewCart(){
+    this.visible = true;
+  }
+
+  hideCart(){
+    this.visible = false;
   }
 }
