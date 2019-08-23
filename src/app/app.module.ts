@@ -14,6 +14,7 @@ import { HeaderComponent } from './header/header.component';
 
 const approutes : Routes = [
   {path:"", component:LoginComponent},
+  {path:"login", component:LoginComponent},
   {path:"calculator", component:CalculatorComponent},
   {path:"cart", component:CartComponent},
 ]
