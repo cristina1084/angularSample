@@ -1,5 +1,5 @@
 {
-  "name": "angular-sample",
+  "name": "sample-app",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -51,7 +51,7 @@
     "typescript": "~3.5.3"
   },
   "engines": {
-    "node": "~11.10.0",
-    "npm": "~6.7.0"
+    "node": "~10.13.0",
+    "npm": "~6.4.1"
   }
 }

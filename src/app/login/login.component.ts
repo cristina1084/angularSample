@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
-  showMessage(n){
+  showMessage(){
     this.view = !this.view; 
   }
   signUp(){
